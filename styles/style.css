@@ -26,7 +26,7 @@ header {
     color: #fff;
     padding: 10px 20px; /* Reduced padding */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
+    border-radius: 0px;
 }
 
 .header-left {
@@ -73,7 +73,7 @@ header h1 {
     border: none;
     color: #fff;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 /* Mobile Navigation */
@@ -282,6 +282,92 @@ button:hover {
     font-size: 16px; /* Reduced font size */
 }
 
+/* Announcement Section */
+.announcement {
+    background-color: #FFEB3B; /* Yellow background */
+    padding: 10px 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #388E3C; /* Dark green text */
+    border-bottom: 2px solid #388E3C;
+    overflow: hidden; /* Hides the content that goes outside the container */
+}
+
+.announcement-ticker {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite; /* Increased the duration to 30s for a slower scroll */
+}
+
+.announcement-ticker p {
+    margin: 0;
+    padding: 0 30px;
+}
+
+@keyframes ticker {
+    0% {
+        transform: translateX(100%); /* Start off screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* End off screen to the left */
+    }
+}
+
+
+
+/* About Section Styles */
+.about {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #388E3C; /* Dark green color for title */
+    margin-bottom: 20px;
+}
+
+.about-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Dark text for better readability */
+    text-align: left;
+}
+
+.about-content p {
+    margin: 20px 0;
+}
+
+.about-content strong {
+    color: #388E3C; /* Highlight "Mission" and "Vision" */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #388E3C; /* Green footer */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+
 /* Footer */
 footer {
     text-align: center;
@@ -289,6 +375,6 @@ footer {
     background-color: #388E3C;
     color: white;
     font-size: 12px; /* Reduced font size */
-    border-radius: 10px;
+    border-radius: 0px;
     margin-top: 20px;
 }
